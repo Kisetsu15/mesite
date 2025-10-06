@@ -1,0 +1,35 @@
+@import 'tailwindcss';
+
+html, body, #root {
+    height: 100%;
+}
+
+/* optional tweak to make the font feel terminal-like */
+:root {
+    --terminal-bg: #0b0f14; /* main background */
+    --terminal-fg: #dfe7ec; /* text */
+    --accent: #7ee787;
+}
+
+body {
+    background: var(--terminal-bg);
+    color: var(--terminal-fg);
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', 'Courier New', monospace;
+}
+
+/* fake caret animation */
+.caret::after {
+    content: '';
+    display: inline-block;
+    width: 8px;
+    height: 1em;
+    background: var(--terminal-fg);
+    margin-left: 6px;
+    animation: blink 1s steps(1) infinite;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0
+    }
+}

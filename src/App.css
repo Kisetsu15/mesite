@@ -1,0 +1,44 @@
+:root {
+  --terminal-bg: #181818;
+  --terminal-fg: #00ff00;
+  --accent: #00ff00;
+}
+
+body {
+  background: var(--terminal-bg);
+  color: var(--terminal-fg);
+  font-family: 'Fira Mono', 'Consolas', 'Menlo', 'Monaco', monospace;
+}
+
+.classic-terminal {
+  background: var(--terminal-bg);
+  color: var(--terminal-fg);
+  border: 1px solid #333;
+  border-radius: 4px;
+  font-family: inherit;
+  box-shadow: none;
+}
+
+.classic-header {
+  background: #222;
+  color: var(--accent); /* Neon green header */
+  border-bottom: 1px solid #333;
+  font-family: inherit;
+}
+
+.classic-input {
+  background: transparent;
+  color: var(--terminal-fg);
+  border: none;
+  font-family: inherit;
+  caret-color: var(--accent);
+}
+
+.classic-accent {
+  color: var(--accent);
+}
+
+.classic-prompt {
+  color: var(--accent);
+  font-family: inherit;
+}

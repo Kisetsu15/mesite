@@ -1,0 +1,32 @@
+{
+  "name": "console",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "https://Kisetsu15.github.io/mesite/",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "deploy": "gh-pages -d dist"
+  },
+  "dependencies": {
+    "@tailwindcss/postcss": "^4.1.14",
+    "@vitejs/plugin-react": "^5.0.4",
+    "framer-motion": "^10.18.0",
+    "postcss": "^8.5.6",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "tailwindcss": "^4.1.14"
+  },
+  "devDependencies": {
+    "eslint": "^9.37.0",
+    "gh-pages": "^6.3.0",
+    "vite": "^7.1.9"
+  },
+  "description": "This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.",
+  "main": "eslint.config.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module"
+}
